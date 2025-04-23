@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react';
 import Banner from './components/Banner/Banner';
 import Formulario from './components/Formulario';
@@ -65,6 +66,16 @@ function App() {
 
       <Rodape />
 
+=======
+import Banner from './components/Banner/Banner';
+import Formulario from './components/Formulario';
+
+function App() {
+  return (
+    <div className="App">
+      <Banner/>
+      <Formulario/>
+>>>>>>> e49d2ad4e3e91855bcb20cce21fe1bf88ffa80ed
     </div>
   );
 }
