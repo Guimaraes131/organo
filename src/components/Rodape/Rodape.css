@@ -1,0 +1,17 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #6278F7;
+    color: #FFF;
+    align-items: center;
+}
+
+.rodape .redesSociais ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.rodape .redesSociais ul li:last-child {
+    margin-right: 0;
+}
