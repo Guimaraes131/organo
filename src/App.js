@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Banner from './components/Banner';
+import CampoTexto from './components/CampoTexto';
+import Formulario from './components/Formulario';
 
 function App() {
   return (
-    <div>
-      
+    <div className="App">
+      <Banner/>
+      <Formulario/>
     </div>
   );
 }
