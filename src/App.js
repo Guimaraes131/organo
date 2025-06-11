@@ -40,6 +40,10 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState([]);
 
+  const deletarColaborador = () => {
+    console.log('deletando colaborador')
+  }
+
   return (
     <div className="App">
       <Banner/>
@@ -52,6 +56,7 @@ function App() {
           primaria={time.corPrimaria}
           secundaria={time.corSecundaria}
           colaboradores={colaboradores.filter((colaborador) => colaborador.time === time.nome)}
+          aoDeletar={deletarColaborador}
         />
       )}
 
