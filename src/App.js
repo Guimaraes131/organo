@@ -231,6 +231,10 @@ function App() {
     }));
   }
 
+  const cadastrarTime = (novoTime) => {
+    setTimes([...times, { ...novoTime, id: uuidv4() }])
+  }
+
   return (
     <div className="App">
       <Banner/>
@@ -239,6 +243,7 @@ function App() {
         aoColaboradorCadastrado={(colaborador) =>
           setColaboradores([...colaboradores, colaborador])
         }
+        cadastrarTime={() => cadastrarTime()}
       />
 
       {times.map((time) =>
