@@ -51,6 +51,7 @@ function App() {
           nome={time.nome}
           primaria={time.corPrimaria}
           secundaria={time.corSecundaria}
+          colaboradores={colaboradores.filter((colaborador) => colaborador.time === time.nome)}
         />
       )}
 
