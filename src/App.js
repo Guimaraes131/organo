@@ -231,7 +231,7 @@ function App() {
     }));
   }
 
-  const cadastrarTime = (novoTime) => {
+  const cadastrarNovoTime = (novoTime) => {
     setTimes([...times, { ...novoTime, id: uuidv4() }])
   }
 
@@ -243,7 +243,7 @@ function App() {
         aoColaboradorCadastrado={(colaborador) =>
           setColaboradores([...colaboradores, colaborador])
         }
-        cadastrarTime={() => cadastrarTime()}
+        cadastrarTime={cadastrarNovoTime}
       />
 
       {times.map((time) =>
